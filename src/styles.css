@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+     /* Primary */
+     --color_dark-cyan: hsl(185, 75%, 39%);
+     --color_very-dark-desaturated-blue: hsl(229, 23%, 23%);
+     --color_dark-grayish-blue: hsl(227, 10%, 46%);
+
+     /* Neutral */
+     --color_dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(26, 161, 173);
+    background-image: url("images/bg-pattern-bottom.svg");
+    background-repeat: space;
+}
+
+.profile-container {
+    width: 350px;
+    height: 375px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.profile-picture {
+    background-image: url("images/bg-pattern-card.svg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 140px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 85px auto 0 auto;
+    margin-left: 120px;
+}
+
+.profile-info {
+    font-size: 18px;
+    margin-top: 55px;
+}
+
+.profile-info-nameage {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-info-nameage p {
+    margin: 15px 5px 0 5px;
+}
+
+.profile-info-nameage .name {
+    font-weight: bold;
+}
+
+.profile-info-nameage .age {
+    font-weight: 300;
+    color: rgba(0,0,0, 0.6);
+}
+
+.profile-info-location {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 5px;
+    color:var(--color_dark-grayish-blue);
+}
+
+.line {
+    margin-top: 25px;
+    border-top: 1px solid rgb(226, 226, 226);
+}
+
+.profile-stats {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 6px;
+    font-size: 18px;
+}
+
+.profile-stats .stat-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 45px;
+    margin-right: 5px;
+}
+
+.profile-stats .stat-value {
+    font-weight: bold;
+}
+
+.profile-stats .stat-label {
+    font-size: 12px;
+    color: var(--color_dark-grayish-blue);
+}
